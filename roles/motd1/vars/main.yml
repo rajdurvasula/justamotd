@@ -1,0 +1,5 @@
+---
+# vars file for motd1
+messages:
+  message1: "Welcome !"
+  message2: "This is another test message !!"

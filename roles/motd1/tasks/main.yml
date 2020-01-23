@@ -1,0 +1,10 @@
+---
+# tasks file for motd1
+
+- name: Set motd messages
+  copy:
+    content: "{{ item }}"
+    dest: /etc/motd
+    owner: root
+    group: root
+  with_items: "{{ messages }}"

@@ -1,0 +1,6 @@
+---
+- name: Playbook to copy motd messages
+  hosts: all
+
+  roles:
+    - { role: motd1, }
