@@ -3,8 +3,15 @@
 
 - name: Set motd messages
   copy:
-    content: "{{ item }}"
+    content: "{{ messages.message1 }}"
     dest: /etc/motd
     owner: root
     group: root
-  with_items: "{{ messages }}"
+
+- name: Set another message
+  lineinfile:
+    path: /etc/motd
+    line: "{{ messages.message2 }}"
+    insertafter: EOF
+    owner: root
+    group: root
