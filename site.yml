@@ -4,3 +4,4 @@
 
   roles:
     - { role: motd1, }
+    - { role: motd2, }

@@ -1,0 +1,8 @@
+---
+# tasks file for motd2
+
+- name: Set user message of the day
+  lineinfile:
+    path: /etc/motd
+    line: "{{ user_message }}"
+    insertafter: EOF
