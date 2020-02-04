@@ -6,3 +6,5 @@
     path: /etc/motd
     line: "{{ user_message }}"
     insertafter: EOF
+  tags:
+    - motd2

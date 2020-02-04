@@ -3,5 +3,5 @@
   hosts: all
 
   roles:
-    - { role: motd1, }
-    - { role: motd2, }
+    - { role: motd1, tags: motd1 }
+    - { role: motd2, tags: motd2 }
